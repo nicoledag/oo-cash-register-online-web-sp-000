@@ -15,7 +15,6 @@ class CashRegister
 
   def apply_discount
 
-binding.pry
     cal_dis = self.total * self.discount.to_r / 100
 
     cal_int = cal_dis.to_i
