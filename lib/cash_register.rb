@@ -1,1 +1,28 @@
+require 'pry'
 
+class CashRegister
+
+  attr_accessor :total, :discount
+
+  def initialize(total = 0, discount = 20)
+  @total = total
+  @discount = discount
+
+  end
+
+  def add_item(title, price, quantity = 1)
+    self.total += price * quantity
+  end
+
+  def apply_discount
+
+binding.pry
+    cal_dis = self.total * self.discount.to_r / 100
+
+    cal_int = cal_dis.to_i
+    self.total = self.total - cal_int
+
+    puts "After the discount, the total comes to #{self.total}."
+
+  end
+end
