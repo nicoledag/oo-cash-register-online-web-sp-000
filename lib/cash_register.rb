@@ -27,8 +27,8 @@ class CashRegister
   end
 
   def items
-  binding.pry
-   add_item.maps {|t| title}
+    add_item(title, price, quantity = 1)
+  
 
 
 
