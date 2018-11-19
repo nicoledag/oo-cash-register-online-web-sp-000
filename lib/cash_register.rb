@@ -14,9 +14,7 @@ class CashRegister
   end
 
   def apply_discount
-
     cal_dis = self.total * self.discount.to_r / 100
-
     cal_int = cal_dis.to_i
     self.total = self.total - cal_int
 
