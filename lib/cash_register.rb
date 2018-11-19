@@ -26,8 +26,8 @@ class CashRegister
       end
   end
 
-  def items
-    add_item(title, price, quantity = 1)
+  def items(add_item)
+    
 
 
 
