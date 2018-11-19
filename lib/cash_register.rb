@@ -10,11 +10,10 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    self.total += price * quantity
+    @total += price * quantity
   end
 
   def apply_discount
-
     cal_dis = @total * @discount.to_r / 100
     cal_int = cal_dis.to_i
     @total = @total - cal_int
@@ -28,7 +27,8 @@ class CashRegister
 
   def items
 
-
+    binding.pry
+    
 
 
 
