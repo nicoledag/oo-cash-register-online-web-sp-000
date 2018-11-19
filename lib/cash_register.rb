@@ -15,12 +15,14 @@ class CashRegister
 
   def apply_discount
 
-    cal_dis = self.total * self.discount.to_r / 100
+    cal_dis = @total * @discount.to_r / 100
     cal_int = cal_dis.to_i
-    self.total = self.total - cal_int
+    @total = @total - cal_int
 
-
-    puts "After the discount, the total comes to #{self.total}."
+      if @discount == 0
+        "There is no discount to apply."
+      else
+        "After the discount, the total comes to #{self.total}."
 
   end
 end
