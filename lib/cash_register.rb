@@ -9,7 +9,7 @@ class CashRegister
     @discount = discount
   end
 
-  def add_item(title, price, quantity = 1)
+  def 
     self.total += price * quantity
   end
 
@@ -28,6 +28,8 @@ class CashRegister
 
   def items
   binding.pry
+
+  add_item(title, price, quantity = 1)
 
 
 
