@@ -28,7 +28,7 @@ class CashRegister
   def items
 
 
-binding.pry
+
 
 
 
