@@ -29,7 +29,7 @@ class CashRegister
   def items(add_item)
   binding.pry
    add_item.maps {|t| title}
-  
+
 
 
 
